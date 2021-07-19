@@ -1,0 +1,1 @@
+var words = 'lorem ipsum';
