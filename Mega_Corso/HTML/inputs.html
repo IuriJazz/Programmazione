@@ -7,16 +7,111 @@
 <body>
 <!--il primo è solo testo lungo, gli altri sono tutti i tipi di input-->
     <form>
-        <textarea name="Testo Lungo" maxlength="100"></textarea>
+        <textarea name="Testo Lungo" maxlength="100">[testo lungo]</textarea>
     </form>
+<!--da qui inizio a fare solo inputsss-->
 
-    <form>
+    <form> <!--Questo è semplice testo [piccolo]-->
         <input type="text" name="Prova" value="> ">
-    </form>
+    </form> <!--quel che scrivi va sull'url-->
 
-    <form>
+    <form> <!--Questo è un check, quello verde carino-->
         <input type="checkbox" name="prova2" value="">
     </form>
 
+    <form> <!--Dovrebbe esser un pulsante-->
+        <a href="https://www.google.it/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DLuNduPnPawE&psig=AOvVaw1mdvMViAWeVWN0sZF9t77Y&ust=1626949082264000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCID74eP38_ECFQAAAAAdAAAAABAD"
+        target="_blank"><input type="button" name="prova3" value="speremo">
+        </a>
+        <a href="https://i.ytimg.com/vi/LuNduPnPawE/maxresdefault.jpg" target="_blank">
+        <input type="button" name="prova3bis" value="dovaria andar, forse">
+        </a>
+    </form>
+    <br>
+    <form> <!--Questo è un semplice colore da scegliere. Simpatico-->
+        <input type="color">
+    </form>
+    <br>
+    <form> <!--Selezioni una data-->
+        <input type="date">
+    </form>
+    <br>
+    <form> <!--Data + ora-->
+        <input type="datetime-local">
+    </form>
+    <br>
+    <form> <!--Inserisci na mail-->
+        <input type="email" title="mettici una mail">
+    </form>
+    <br>
+    <form> <!--Carica file di qualunque tipo-->
+        <input type="file">
+    </form>
+    <br>
+    <form> <!--un input nascosto-->
+        <input type="hidden" value="nascosto sono">
+    </form>
+    <br>
+    <form> <!--https://www.w3schools.com/tags/att_input_type_image.asp-->
+        <input type="image">
+    </form>
+    <br>
+    <form> <!--Solo mese-->
+        <input type="month">
+    </form>
+    <br>
+    <form> <!--Semplice numero-->
+        <input type="number">
+    </form>
+    <br>
+    <form> <!--passwords oscurate-->
+        <input type="password">
+    </form>
+    <br>
+    <form> <!--pulsantini, con name uguale si scambiano-->
+        <input type="radio" id="1" name="prova_radio" value="I">
+        <label for="1">primo</label>
+        <br>
+        <input type="radio" id="2" name="prova_radio" value="II">
+        <label for="2">secondo</label>
+    </form>
+    <br>
+    <form> <!--semplice slider-->
+        <label for="rng">Range numerale</label>
+        <input type="range" id="rng" name="range" min="0" max="200">
+    </form>
+    <br>
+    <form> <!--resetta solamente ciò che sta dentro lo stesso form-->
+        <input type="range" min="0" max="300">
+        <label for="reset">Resetta tutto ciò che c'è dentro il proprio form nella sezione</label>
+        <input type="reset" id="reset">
+    </form>
+    <br>
+    <form> <!--search = ricerca da qualche parte, submit applica le cose scritte sul form-->
+        <label for="gsearch">Ricerca su Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <input type="submit">
+    </form>
+    <br>
+    <form>
+        <label for="phone">Mettici il tuo numero, solo quello italiano, così ti disturbo</label>
+        <input type="tel" id="phone" name="phone" placeholder="(+39)-012-3456789" pattern="+39-[0-9]{3}-[0-9]{7}" required>
+        <input type="submit">
+    </form>
+    <br>
+    <form>
+        <label for="appt">Metti n'orario:</label>
+        <input type="time" id="appt" name="appt">
+    </form>
+    <br>
+    <form>
+        <label for="url">Mettici un url</label>
+        <input type="url" id="url">
+    </form>
+    <br>
+    <form>
+        <label for="settimana">Seleziona na settimana che vuoi, così, tanto per</label>
+        <input type="week" id="settimana">
+    </form>
 
 </body>
