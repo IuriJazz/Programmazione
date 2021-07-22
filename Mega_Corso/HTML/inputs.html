@@ -28,7 +28,7 @@
         target="_blank"><input type="button" name="prova3" value="speremo">
         </a>
         <a href="https://i.ytimg.com/vi/LuNduPnPawE/maxresdefault.jpg" target="_blank">
-        <input type="button" name="prova3bis" value="dovaria andar, forse">
+        <button type="button" name="prova3bis" value="dovaria andar, forse" onclick="alert('Bella zio!')">dovaria andar, forse</button>
         </a>
     </form>
     <br>
@@ -49,7 +49,7 @@
     </form>
     <br>
     <form> <!--Carica file di qualunque tipo-->
-        <input type="file">
+        <input type="file" onclick="alert('tanto non serve a nulla ciò che carichi')">
     </form>
     <br>
     <form> <!--un input nascosto-->
@@ -154,6 +154,12 @@
             <option value="coccò">coccò</option>
             <option value="3 civette">3 civette</option>
         </select>
+    </form>
+    <br>
+    <form>
+        <label for="prov">Sono inutile</label>
+        <input type="button" value="sono inutile davvero" id="prov">
+        <button type="menu">Ah che figo</button> <!--ricarica la pagina?-->
     </form>
 
 </body>
