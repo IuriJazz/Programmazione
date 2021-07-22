@@ -16,7 +16,11 @@
     </form> <!--quel che scrivi va sull'url-->
 
     <form> <!--Questo è un check, quello verde carino-->
-        <input type="checkbox" name="prova2" value="">
+        <label for="check1">Prima selezione</label>
+        <input type="checkbox" name="prova2" value="prova2" id="check1">
+        <br>
+        <label for="check2">Seconda selezione</label>
+        <input type="checkbox" name="altra selezione" value="prova2-3" id="check2">
     </form>
 
     <form> <!--Dovrebbe esser un pulsante-->
@@ -113,8 +117,8 @@
         <label for="settimana">Seleziona na settimana che vuoi, così, tanto per</label>
         <input type="week" id="settimana">
     </form>
-    <form>
-        <label id="piccola">Listicina su cui scegliere</label>
+    <form> <!--varie forme di liste e selezioni-->
+        <label for="piccola">Listicina su cui scegliere</label>
         <select size="5" id="piccola">
             <option value="Ambara">Ambara</option>
             <option value="bà">bà</option>
@@ -122,7 +126,7 @@
             <option value="coccò">coccò</option>
             <option value="3 civette">3 civette</option>
         </select>
-        <label id="grande">Listiciona con selezione multipla</label>
+        <label for="grande">Listiciona con selezione multipla</label>
         <select name="civette_comò" id="grande">
             <option value="Ambara">Ambara</option>
             <option value="bà">bà</option>
@@ -134,6 +138,21 @@
             <option value="l'amore con la figlia">l'amore con la figlia</option>
             <option value="del dottore, il dottore s'ammalò">del dottore, il dottore s'ammalò</option>
             <option value="ambarabà ciccì coccò">ambarabà ciccì coccò</option>
+        </select>
+        <label for="piccola-selezione">Listicina su cui scegliere in maniera multipla</label>
+        <select size="5" id="piccola-selezione" multiple>
+            <option value="Ambara">Ambara</option>
+            <option value="bà">bà</option>
+            <option value="ciccì">ciccì</option>
+            <option value="coccò">coccò</option>
+            <option value="3 civette">3 civette</option>
+        </select>
+        <select multiple>
+            <option value="Ambara">Ambara</option>
+            <option value="bà">bà</option>
+            <option value="ciccì">ciccì</option>
+            <option value="coccò">coccò</option>
+            <option value="3 civette">3 civette</option>
         </select>
     </form>
 
