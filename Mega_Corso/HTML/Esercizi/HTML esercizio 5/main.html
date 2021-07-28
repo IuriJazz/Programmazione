@@ -1,13 +1,19 @@
 <!--Un titolo principale
 
-Un paragrafo con le informazioni generali
+x Una sezione che contenga il contenuto corrente della pagina, con
+id=content-main
 
-Diverse sezioni che presentino aspetti particolari
-dell'applicazione (nell'esempio Amazon considerate i
-libri, l'elettronica, la musica ecc.). Per ognuna fornite un
-titolo ed almeno un paragrafo.
+- Una sezione che contenga l'header della pagina, con id content-header,
+all'interno del body. All’interno di questa sezione inserisci i link alle
+pagine che abbiamo creato in precedenza.
 
-Create un indice-->
+- Un’altra sezione per il menu di navigazione, con id content-sidebar,
+all’interno del body.
+
+- Una sezione content-footer all'interno del body ,contente informazioni
+sull'autore della pagina l'ultima modifica
+
+-->
 
 
 <!DOCTYPE html>
@@ -31,7 +37,20 @@ Create un indice-->
     </head>
 
     <body>
-        <section id="principale">
+        <section id="content-main">
+            <header id="content-header">
+                <div id="logo">
+                    <h1>Header</h1>
+                </div>
+
+                <ul>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="esercizio3.html">Liste di cose</a></li>
+                    <li><a href="esercizio4.html">Aggiunta di cose</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+
+            </header>
             <h1>
                 Esercizio 2, il primo invece era un semplice "Hello World!"
             </h1>
