@@ -16,13 +16,19 @@
     display: inline-block;
     font-size:initial;
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-    background: red;
+    background: rgba(122, 122, 122, 0.774);
     margin-bottom: calc(var(--m) - var(--s)*0.2885); 
   }
-/*  .container div:nth-child(odd) {
+
+  .container > div:nth-child(1) {
     background:green;
   }
-*/
+
+  #secondo {
+    background: #000;
+  }
+
+
   .container::before {
     content: "";
     width: calc(var(--s)/2 + var(--m));
