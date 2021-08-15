@@ -1,2 +1,10 @@
 https://javascript.plainenglish.io/most-efficient-ways-for-building-pdfs-files-with-backend-and-frontend-javascript-environment-68056f73257
 https://wkhtmltopdf.org/index.html
+
+
+per fare le immagini ho usato questo comando qui:
+    sudo wkhtmltoimage --enable-local-file-access hex-test.html hex-test.jpeg
+
+funziona, anche abbastanza bene, però solo per certe pagine. Non riesco a capire come mai non riesco a 
+esportare il file in maniera tale e quale al browser. Forse c'è qualche cosa che non riesco a capire
+e a risolvere, dato che gli esagoni non ci sono proprio.
