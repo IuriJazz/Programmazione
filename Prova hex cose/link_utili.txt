@@ -1,0 +1,2 @@
+https://javascript.plainenglish.io/most-efficient-ways-for-building-pdfs-files-with-backend-and-frontend-javascript-environment-68056f73257
+https://wkhtmltopdf.org/index.html
