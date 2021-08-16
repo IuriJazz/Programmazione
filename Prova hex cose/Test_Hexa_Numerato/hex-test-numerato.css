@@ -1,0 +1,27 @@
+
+/*  .main {
+/*    display:flex;
+/*    --s: 50px;  /* size  */
+/*    --m: 1px;    /* margin */
+/*    --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
+/*  }
+*/
+
+.container {
+  font-size: 36px; /*disable white space between inline block element */
+}
+
+.container div {
+  display: inline-block;
+  background: rgba(141, 211, 100, 0.541);
+  margin: 5px;
+  margin-right: 0px;
+  margin-bottom: 3px;
+  margin-left: 5px;
+}
+
+/*
+#primo {
+  background: rgba(141, 211, 100, 0.541);
+}
+*/
