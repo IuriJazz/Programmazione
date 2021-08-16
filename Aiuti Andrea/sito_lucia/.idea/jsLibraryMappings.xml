@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@types/jquery, animate.css, e1365d2991, jquery, jquery.fancybox}" />
+  </component>
+</project>

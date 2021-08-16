@@ -1,0 +1,621 @@
+/* GENERALE */
+/* -------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*[id]::before {
+    display: block;
+    content: " ";
+    margin-top: -70px;
+    height: 70px;
+    visibility: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* OUTLINE */
+/* -------------------------------------------------------------------- */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #333;
+}
+
+/* -------------------------------------------------------------------- */
+/* TAPPO */
+/* -------------------------------------------------------------------- */
+.clearfix::after {
+    content: " "; /* dare sempre almeno uno spazio per i vecchi browser */
+    display: block;   /* stessa cosa del tappo, si applica SOLO la contenitore */
+    clear: both;
+}
+.clearer {
+    clear: both;
+}
+
+/* -------------------------------------------------------------------- */
+/* CONTENITORE */
+/* -------------------------------------------------------------------- */
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.tight-container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("../img/nome_normale.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------------------- */
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #333;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+
+}
+
+.navbar a {
+    margin: 30px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid #333;
+}
+
+/* -------------------------------------------------------------------- */
+/* HERO */
+/* -------------------------------------------------------------------- */
+#hero {
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.box h1 {
+    font-size: 50px;
+}
+
+.box p {
+    padding: 20px 80px 0 80px;
+}
+
+/* -------------------------------------------------------------------- */
+/* MUSICA */
+/* -------------------------------------------------------------------- */
+#musica h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 30px;
+    padding: 10px 0 10px 80px;
+    border-radius: 5px;
+}
+
+.boxplayer {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+/*---------*/
+.boxplayer audio:focus {
+    outline: none;
+}
+
+.song-cover {
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/coversong/sotd.jpg");
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.info-song {
+    text-align: center;
+}
+
+.info-song button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 10px;
+    transition: background-color 0.8s;
+    border-radius: 50px;
+}
+
+.info-song button:focus {
+    outline: none;
+}
+
+.info-song button:hover {
+    box-shadow: 0 0 10px #333;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls .play {
+    font-size: 40px;
+}
+
+.song-list h4 {
+    padding: 0 0 20px 15px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.song-list h4::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    background-color: #c3c3c3;
+    height: 1px;
+    width: 220px;
+}
+
+.song-list ul li {
+    padding: 15px;
+    list-style: none;
+    transition: background-color 0.8s;
+    border-radius: 50px;
+}
+
+.song-list ul li:hover {
+    box-shadow: 0 0 10px #333;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------- */
+/* CONCERT */
+/* -------------------------------------------------------------------- */
+#concert h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 30px;
+    padding: 10px 0 10px 80px;
+    border-radius: 5px;
+}
+
+.boxconcert {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+#concert .date {
+    display: flex;
+    flex-direction: column;
+}
+
+#concert h3 {
+    position: relative;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+}
+
+.date span {
+    font-weight: 900;
+}
+
+#concert h3::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 3px;
+    background-color: #333;
+}
+
+.date p {
+    font-size: 12px;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* CONCERT */
+/* -------------------------------------------------------------------- */
+#gallery {
+    margin-bottom: 30px;
+}
+
+#gallery h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 30px;
+    padding: 10px 0 10px 80px;
+    border-radius: 5px;
+}
+
+.boxgallery {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.boxgallery img {
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.boxvideo {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.cardvideo {
+    text-align: center;
+}
+
+.cardvideo img {
+    width: 270px;
+    height: 150px;
+    margin: 15px;
+    border-radius: 5px;
+}
+/* -------------------------------------------------------------------- */
+/* CONTACT ME */
+/* -------------------------------------------------------------------- */
+#contactme {
+    margin-bottom: 30px;
+}
+
+#contactme h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0 10px 80px;
+    border-radius: 5px;
+}
+
+#contactme i {
+    padding-left: 15px;
+}
+
+#contactme i:first-child {
+    margin-left: 650px;
+}
+
+.boxcontatti {
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+#form textarea {
+    outline: none;
+    resize: none;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    height: 126px;
+    width: 400px;
+}
+
+#form textarea:focus {
+    box-shadow: 0 0 10px #333;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+}
+
+.colsx {
+    display: flex;
+    flex-flow: column;
+}
+
+.colsx input {
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.colsx label {
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.coldx {
+    display: flex;
+    flex-flow: column;
+    margin-left: 100px;
+}
+
+.coldx label {
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.boxcontatti input[type="submit"] {
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.8s;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.boxcontatti input[type="submit"]:hover {
+    box-shadow: 0 0 10px #333;
+    background-color: #333;
+    color: #fff;
+}
+
+/* -------------------------------------------------------------------- */
+/* RESPONSIVE */
+/* -------------------------------------------------------------------- */
+/* Smartphone */
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    .tight-container {
+        width: 90%;
+    }
+
+    /* NAVBAR */
+    #header {
+        text-align: center;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+    .navbar a {
+        margin: 20px;
+    }
+
+    /* Musica */
+    .boxplayer {
+        height: 630px;
+        flex-direction: column;
+    }
+
+    /* Concerti */
+    .boxconcert {
+        height: 500px;
+        flex-direction: column;
+    }
+
+    /* Galleria e video */
+    .boxgallery {
+        height: 700px;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .boxgallery a {
+        padding: 10px;
+    }
+
+    .boxvideo {
+        height: 700px;
+        justify-content: space-around;
+        flex-flow: column wrap;
+    }
+
+    /* Contattami */
+    #contactme i:first-child {
+        margin-left: 40px;
+    }
+
+    .boxcontatti {
+        height: 500px;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form textarea {
+        width: 300px;
+    }
+
+    .coldx {
+        margin-left: 0;
+    }
+
+
+}
+
+/*Portrait tablet*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+
+    .tight-container {
+        width: 90%;
+    }
+
+    /* concerti */
+    .boxconcert {
+        padding: 20px;
+    }
+
+    /* Galleria e video */
+    .boxgallery {
+        height: 450px;
+        flex-flow: wrap;
+    }
+
+    .boxgallery a {
+        padding: 10px;
+    }
+
+    .boxvideo {
+        height: 600px;
+        flex-flow: column wrap;
+    }
+
+    /* Contattami */
+    #contactme i:first-child {
+        margin-left: 220px;
+    }
+
+    .boxcontatti {
+        height: 500px;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form textarea {
+        width: 450px;
+    }
+
+    .coldx {
+        margin-left: 0;
+    }
+
+    .colsx input {
+        width: 450px;
+    }
+
+
+}
+
+/*Netbook e landscape tablet*/
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .container {
+        width: 90%;
+    }
+
+    .tight-container {
+        width: 90%;
+    }
+    
+    /* concerti */
+    .boxconcert {
+        padding: 20px;
+    }
+
+    /* Galleria e video */
+    .boxgallery {
+        height: 350px;
+        flex-flow: wrap;
+    }
+
+    .boxgallery a {
+        padding: 10px;
+    }
+
+    /* Contattami */
+    #contactme i:first-child {
+        margin-left: 450px;
+    }
+
+
+}
+
+/* Desktop e Schermi grandi */
+@media (min-width: 1200px) {
+
+}
+
